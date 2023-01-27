@@ -1,0 +1,33 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Tower Of Hell - v0.6", "Synapse")
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Misc")
+MainSection:NewButton("AutoWin", "wins", function()
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace.tower.sections.finish.exit.ParticleBrick.CFrame
+end)
+MainSection:NewButton("Inf Jump", "OMG JUMP JUMP", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/WUquqYN0", true))()
+end) 
+
+
+
+MainSection:NewButton("AntiKick", "Use this", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/BMGbkQ71", true))()
+end)
+
+
+
+
+MainSection:NewButton("MessageSpam", "Use this", function()
+local messages = {
+		"[Driver] get TOH script today to be pro.";
+		"[Driver] Driver is free to get, go get it for epic hax.";
+		"[Driver] I have the best free hub out there.";
+		"[Driver] Did you know im better? can you defeat me? no you cant!";
+	};
+	end)
+
+	local d=false spawn(function() while not d do local c=wait local b=print local a=game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents").SayMessageRequest c(1) b(string.reverse("taoG yb detaerC toB-tahC")) for i,v in pairs(messages) do if not d then a:FireServer(v, "All") print(d) c(3) elseif d then break end end end end) local p=game:GetService("Players").LocalPlayer p.Character.Humanoid.Died:connect(function() d=true end)
+	    MainSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
